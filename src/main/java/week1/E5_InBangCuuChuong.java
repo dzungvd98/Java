@@ -1,3 +1,4 @@
+package week1;
 import java.util.Scanner;
 
 class E5_InBangCuuChuong {
@@ -5,7 +6,7 @@ class E5_InBangCuuChuong {
         System.out.print("Nhap bang cuu chuong muon in ra: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for(int i = 1; i < 10; i++) {
+        for(int i = 1; i <= 10; i++) {
             System.out.printf("%d x %d = %d", n, i, n * i);
             System.out.println();
         }
