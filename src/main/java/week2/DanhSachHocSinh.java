@@ -7,6 +7,19 @@ public class DanhSachHocSinh {
     private int soLuong;
     private HocSinh[] danhSach;
 
+    public DanhSachHocSinh() {
+    }
+
+    public DanhSachHocSinh(int soLuong, HocSinh[] danhSach) {
+        this.soLuong = soLuong;
+        this.danhSach = danhSach;
+    }
+        
+    public DanhSachHocSinh(DanhSachHocSinh ds) {
+        this.soLuong = ds.getSoLuong();
+        this.danhSach = ds.getDanhSach();
+    }
+    
     public int getSoLuong() {
         return soLuong;
     }

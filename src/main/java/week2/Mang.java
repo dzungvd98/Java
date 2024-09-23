@@ -1,7 +1,6 @@
 
 package week3;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Mang {
@@ -11,7 +10,18 @@ public class Mang {
     public Mang() {
         
     }
-  
+
+    public Mang(int soPhanTu, int[] mangPhanTu) {
+        this.soPhanTu = soPhanTu;
+        this.mangPhanTu = mangPhanTu;
+    }
+    
+    public Mang(Mang a) {
+        this.soPhanTu = a.getSoPhanTu();
+        this.mangPhanTu = a.getMangPhanTu();
+    }
+    
+    
     public int getSoPhanTu() {
         return soPhanTu;
     }

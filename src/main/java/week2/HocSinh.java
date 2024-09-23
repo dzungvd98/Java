@@ -11,6 +11,19 @@ public class HocSinh {
         
     }
 
+    public HocSinh(String maSo, String hoVaTen, Float diemTrungBinh) {
+        this.maSo = maSo;
+        this.hoVaTen = hoVaTen;
+        this.diemTrungBinh = diemTrungBinh;
+    }
+    
+    public HocSinh(HocSinh hs) {
+        this.maSo = hs.getMaSo();
+        this.hoVaTen = hs.getHoVaTen();
+        this.diemTrungBinh = hs.getDiemTrungBinh();
+    }
+    
+    
     public String getMaSo() {
         return maSo;
     }
